@@ -57,7 +57,7 @@ const App = () => {
           <Button symbol="-" color={buttonColor} handleClick={addToText} />
         </div>
         <div className="row">
-        <Button symbol="clear" color="red" handleClick={resetInput} />
+        <Button symbol="clear all" color="red" handleClick={resetInput} />
         <Button symbol="Ac" color="green" handleClick={clearLastInput} />
         </div>
         
