@@ -22,6 +22,9 @@ const App = () => {
     setText("");
     setResult("");
   };
+  const clearLastInput = () => {
+    setText(prevText => prevText.slice(0, -1));
+  }
 
   const buttonColor = "#f2a33c";
 
@@ -53,7 +56,11 @@ const App = () => {
           <Button symbol="=" handleClick={calculateResult} />
           <Button symbol="-" color={buttonColor} handleClick={addToText} />
         </div>
+        <div className="row">
         <Button symbol="clear" color="red" handleClick={resetInput} />
+        <Button symbol="Ac" color="green" handleClick={clearLastInput} />
+        </div>
+        
       </div>
     </div>
   );
